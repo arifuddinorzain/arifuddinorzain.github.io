@@ -53,6 +53,7 @@
         border-radius: 20px;
         border: none;
         box-shadow: 0px 0px 20px #d0d0d0;
+        padding: 10px;
     }
     #card .card-body h5{
         padding-top: 10px;
@@ -60,6 +61,28 @@
     }
     #tajukbaru{
         padding-top: 40px;
+    }
+    .timeline .timeline-item:after {
+        position: absolute;
+        display: block;
+        top: 0;
+    }
+    .timeline .timeline-item:after {
+        background-color: hsl(0, 0%, 90%);
+        left: -47px;
+        border-radius: 50%;
+        height: 11px;
+        width: 11px;
+        content: "";
+    }
+    .timeline {
+        border-left: 2px solid hsl(0, 0%, 90%);
+        position: relative;
+        list-style: none;
+        color: #FF5733;
+    }
+    .timeline .timeline-item {
+        position: relative;
     }
     @media only screen and (max-width: 600px) {
     #tajukbaru{
@@ -93,16 +116,24 @@
 <div id="jumbotron" class="jumbotron text-left" style="height: 350px;color:black;background-image: linear-gradient(to bottom, #FFC300 40%, #FFC300 , #FFC300);border-radius: 0px;">
     <div class="row">
         <div class="col-sm-6" >
-            <h1 id="title">Hello, I'm <span style="color: black;">Ayip</span></h1>
-            <h3 id="title">DEVELOPER</h3> 
-            <h5 class="caption " style="font-weight: lighter;color:white;text-shadow: 0px 0px 5px #FFC300;">I'm passionate about helping creative professional to increase their worth by improving their craft.This is example of caption that we use in this website.</h5>
+            <h1 id="title">Hello, I'm <span style="color: black;">Arif</span></h1>
+            <h3 id="title">JUNIOR DEVELOPER</h3> 
+            <h5 class="caption " style="font-weight: lighter;color:white;text-shadow: 0px 0px 5px #FFC300;">Dedicated to acquiring knowledge and fostering personal growth to consistently attain improved outcomes. My whole life is about being creative and simple.</h5>
             <div id="buttonjumbotron" class="buttonjumbotron mt-2">
                 <a href="#donutlink"><button style="color:white;background-color: #FF5733;" >Read more</button></a>
             </div>
         </div>
         <div class="col-sm-6 " style="background: radial-gradient(white , #FFC300 60%);width: 100%;">
-            <img align="right" src="https://www.pngall.com/wp-content/uploads/2018/04/Businessman-Transparent.png" style="width:80%;height:90%;">
-            <div style="background-color: #FFC300;height: 70%;width: 60%;border-radius: 100%;margin:0 auto;box-shadow: 0px 0px 20px #CFA600 inset;"></div>
+            <div class="row">
+                <div class="col-sm-2">
+                </div>
+                <div class="col-sm-8" style="background-color: #FFC300;height: 450px;width: 100%;border-radius: 100%;background-image: url(ayipgambar.png);background-size: 80% 100%;background-repeat: no-repeat;background-position-x: center;box-shadow: 0px 0px 20px #CFA600 inset;">
+                
+                </div>
+                <div class="col-sm-2">
+                </div>
+            </div>
+            <!-- <div style="background-color: #FFC300;height: 70%;width: 60%;border-radius: 100%;margin:0 auto;box-shadow: 0px 0px 20px #CFA600 inset;"></div> -->
         </div>
     </div>
 </div>
@@ -116,32 +147,72 @@
             <div class="col-sm-3" style="display: inline;">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fa-solid fa-user-tie" style="font-size: 30px;-webkit-text-stroke-width: 3px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Busines</h5>
+                        <i class="fa-solid fa-user-tie" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>HTML</h5>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3" style="display: inline;">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fa-solid fa-pen-nib" style="font-size: 30px;-webkit-text-stroke-width: 3px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Writer</h5>
+                        <i class="fa-solid fa-pen-nib" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>PHP</h5>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3" style="display: inline;">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fa-solid fa-palette" style="font-size: 30px;-webkit-text-stroke-width: 3px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Art</h5>
+                        <i class="fa-solid fa-palette" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>CSS</h5>
                     </div>
                 </div>
             </div>
             <div class="col-sm-3" style="display: inline;">
                 <div class="card">
                     <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 30px;-webkit-text-stroke-width: 3px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Pro</h5>
+                        <i class="fa-solid fa-code" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>jQuery</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>Laravel</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>Javascript</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>Git</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>MySQL</h5>
                     </div>
                 </div>
             </div>
@@ -149,6 +220,43 @@
     </div>
   </div>
   <div class="row pt-5">
+    <div id="radial" class="col-sm-6" >
+    </div>
+    <div class="col-sm-6" style="color: white;">
+      <h3 id="donutlink"><i class="fa-solid fa-graduation-cap"></i> Education </h3>
+      <section>
+        <ul class="timeline">
+            <li class="timeline-item mb-5">
+              <h5 class="fw-bold">MRSM PENDANG</h5>
+              <p class="text-light mb-2 fw-bold">2013 Until 2017</p>
+              <p class="text-light">
+                Pendang, Kedah.<br>
+                Science Module.
+              </p>
+            </li>
+            <li class="timeline-item mb-5">
+                <h5 class="fw-bold">NEGERI SEMBILAN MATRICULATION COLLEGE</h5>
+                <p class="text-light mb-2 fw-bold">2018-2019</p>
+                <p class="text-light">
+                    Kuala Pilah, Negeri Sembilan.<br>
+                    Module 2, Computer Science
+                </p>
+            </li>
+            <li class="timeline-item mb-5">
+                <h5 class="fw-bold">UNIVERSITI TEKNIKAL MALAYSIA MELAKA, UTEM</h5>
+                <p class="text-light mb-2 fw-bold">2019-2023</p>
+                <p class="text-light">
+                    Durian Tunggal, Melaka<br>
+                    Electronic Engineering
+                </p>
+            </li>
+        </ul>
+      </section>
+      <br>
+  </div>
+</div>
+<br>
+<div class="row pt-5">
     <div id="radial" class="col-sm-6" style="background: radial-gradient(white , #FFC300 50%);">
         <img align="right" src="https://www.pngall.com/wp-content/uploads/2018/04/Businessman-Transparent.png" style="width:70%;height:80%;">
     </div>
@@ -167,7 +275,6 @@
       <br>
   </div>
 </div>
-<br>
 <center><a class="company text-muted" style="padding-top: 50px;color:black;" href="https://wa.me/60198703108?text=I would like to build my business landing page," target="_blank">- By WebDev -</a></center>
 
 </body>
