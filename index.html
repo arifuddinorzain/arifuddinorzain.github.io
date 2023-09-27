@@ -12,6 +12,7 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/6b891dce95.js" crossorigin="anonymous"></script>
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
     body{
@@ -68,7 +69,7 @@
         top: 0;
     }
     .timeline .timeline-item:after {
-        background-color: hsl(0, 0%, 90%);
+        background-color: hsl(0, 0%, 0%);
         left: -47px;
         border-radius: 50%;
         height: 11px;
@@ -76,13 +77,21 @@
         content: "";
     }
     .timeline {
-        border-left: 2px solid hsl(0, 0%, 90%);
+        border-left: 2px solid hsl(0, 0%, 0%);
         position: relative;
         list-style: none;
-        color: #FF5733;
+        color: black;
     }
     .timeline .timeline-item {
         position: relative;
+    }
+    #owl .item .card{
+        border-radius: 10px;
+        background-color: #FFC300;
+        box-shadow: 0px 0px 5px grey inset;
+    }
+    #owl .item .card .card-header img{
+        border-radius: 10px;
     }
     @media only screen and (max-width: 600px) {
     #tajukbaru{
@@ -93,7 +102,10 @@
         0% { opacity: 0; }
         100% { opacity: 1; }
     }
+    
   </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 <nav id="navbar" class="navbar navbar-expand-lg navbar-light" style="background-color: #FFC300;">
@@ -107,7 +119,7 @@
             <a class="nav-link active" href="index.html" style="color: white;">Home</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="#donutlink" >Contact Me</a>
+            <a class="nav-link" href="#aboutme" >Contact Me</a>
         </li>
         </ul>
     </div>
@@ -117,8 +129,8 @@
     <div class="row">
         <div class="col-sm-6" >
             <h1 id="title">Hello, I'm <span style="color: black;">Arif</span></h1>
-            <h3 id="title">JUNIOR DEVELOPER</h3> 
-            <h5 class="caption " style="font-weight: lighter;color:white;text-shadow: 0px 0px 5px #FFC300;">Dedicated to acquiring knowledge and fostering personal growth to consistently attain improved outcomes. My whole life is about being creative and simple.</h5>
+            <h3 id="title">JUNIOR DEVELOPER | ELECTRONIC ENGINEER</h3> 
+            <h5 class="caption " style="font-weight: lighter;color:black;text-shadow: 0px 0px 5px #FFC300;">Dedicated to acquiring knowledge and fostering personal growth to consistently attain improved outcomes. My whole life is about being creative and simple.</h5>
             <div id="buttonjumbotron" class="buttonjumbotron mt-2">
                 <a href="#donutlink"><button style="color:white;background-color: #FF5733;" >Read more</button></a>
             </div>
@@ -141,8 +153,8 @@
 <div class="container">
   <div id="tajukbaru" class="row text-center">
     <div class="col-sm-6" style="display: inline;background-color: #FFC300;padding: 20px;border-radius: 20px;box-shadow: 0px 0px 20px #CFA600 inset;">
-        <h2 style="color: white;">My Skills</h2>
-        <h7 class="captionkecil" style="color: white;">I'm passionate about helping creative professional to increase their worth by improving their craft.This is example of caption that we use in this website.</h7>
+        <h2 style="color: black;">My Skills</h2>
+        <h7 class="captionkecil" style="color: black;">All of these skills have been acquired through my prior studies and experiences.</h7>
         <div id="card" class="row py-5">
             <div class="col-sm-3" style="display: inline;">
                 <div class="card">
@@ -216,66 +228,167 @@
                     </div>
                 </div>
             </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>API</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>PLC</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>C++</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3" style="display: inline;">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
+                        <h5>IoT</h5>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
   </div>
   <div class="row pt-5">
-    <div id="radial" class="col-sm-6" >
+    <div id="radial" class="col-sm-6" style="color: black;">
+        <h3 id="donutlink"><i class="fa-solid fa-graduation-cap"></i> Education </h3>
+        <section>
+            <ul class="timeline">
+                <li class="timeline-item mb-5">
+                <h5 class="fw-bold">MRSM PENDANG</h5>
+                <p class="text-dark mb-2 fw-bold">2013 Until 2017</p>
+                <p class="text-dark">
+                    Pendang, Kedah.<br>
+                    Science Module.
+                </p>
+                </li>
+                <li class="timeline-item mb-5">
+                    <h5 class="fw-bold">NEGERI SEMBILAN MATRICULATION COLLEGE</h5>
+                    <p class="text-dark mb-2 fw-bold">2018-2019</p>
+                    <p class="text-dark">
+                        Kuala Pilah, Negeri Sembilan.<br>
+                        Module 2, Computer Science
+                    </p>
+                </li>
+                <li class="timeline-item mb-5">
+                    <h5 class="fw-bold">UNIVERSITI TEKNIKAL MALAYSIA MELAKA, UTEM</h5>
+                    <p class="text-dark mb-2 fw-bold">2019-2023</p>
+                    <p class="text-dark">
+                        Durian Tunggal, Melaka<br>
+                        Bachelor of Electronic Engineering
+                    </p>
+                </li>
+            </ul>
+        </section>
+        <br>
     </div>
-    <div class="col-sm-6" style="color: white;">
-      <h3 id="donutlink"><i class="fa-solid fa-graduation-cap"></i> Education </h3>
+    <div class="col-sm-6" style="color: black;">
+      <h3 id="donutlink"><i class="fa-solid fa-briefcase"></i> Experience </h3>
       <section>
         <ul class="timeline">
             <li class="timeline-item mb-5">
-              <h5 class="fw-bold">MRSM PENDANG</h5>
-              <p class="text-light mb-2 fw-bold">2013 Until 2017</p>
-              <p class="text-light">
-                Pendang, Kedah.<br>
-                Science Module.
+              <h5 class="fw-bold">QUALITY CONTROL</h5>
+              <p class="text-dark mb-2 fw-bold">2022 Until 20222</p>
+              <p class="text-dark">
+                Krubong, Melaka<br>
+                Handle customer report.
               </p>
             </li>
             <li class="timeline-item mb-5">
-                <h5 class="fw-bold">NEGERI SEMBILAN MATRICULATION COLLEGE</h5>
-                <p class="text-light mb-2 fw-bold">2018-2019</p>
-                <p class="text-light">
-                    Kuala Pilah, Negeri Sembilan.<br>
-                    Module 2, Computer Science
+                <h5 class="fw-bold">GOOGLE FORM SURVEY BOT</h5>
+                <p class="text-dark mb-2 fw-bold">2022 Until 2023</p>
+                <p class="text-dark">
+                  Flexible, shopee<br>
+                  Part time as filler google form using Bot.
                 </p>
-            </li>
-            <li class="timeline-item mb-5">
-                <h5 class="fw-bold">UNIVERSITI TEKNIKAL MALAYSIA MELAKA, UTEM</h5>
-                <p class="text-light mb-2 fw-bold">2019-2023</p>
-                <p class="text-light">
-                    Durian Tunggal, Melaka<br>
-                    Electronic Engineering
-                </p>
-            </li>
+              </li>
         </ul>
       </section>
       <br>
   </div>
 </div>
 <br>
-<div class="row pt-5">
-    <div id="radial" class="col-sm-6" style="background: radial-gradient(white , #FFC300 50%);">
-        <img align="right" src="https://www.pngall.com/wp-content/uploads/2018/04/Businessman-Transparent.png" style="width:70%;height:80%;">
+<h2>Portfolio</h2>
+<div id="owl" class="owl-carousel owl-theme">
+    <div class="item">
+        <div class="card">
+            <div class="card-header"><img src="portfolio1.png" style="min-height: 210px;"></div>
+            <div class="card-body text-dark" ><h5>Komik Digital</h5></div>
+            <div class="card-footer text-dark"><h6>Platform where artists upload their drawings and display them for everyone to read.</h6></div>
+        </div>
     </div>
-    <div class="col-sm-6" style="color: white;">
-      <h3 id="donutlink">Contact Me</h3>
-      <p class="caption2">Please feel free to contact me if you need any further information. </p>
-      <div>
-        <ul style="list-style: none;padding-left: 0px;font-family: 'Ubuntu', sans-serif;" >
-            <li style="display:inline;"><a id="facebook" href="#" class="fa fa-facebook" style="background-color: #3B5998;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li>
-            <li style="display:inline;"><a id="instagram" href="#" class="fa fa-instagram" style="background-color: #8a3ab9;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li>
-            <li style="display:inline;"><a id="facebook" href="#" class="fa-brands fa-whatsapp" style="background-color: #44A52C;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li>
-        </ul>
-        <h5><i class="fa-solid fa-phone" style="color: black;font-size: 15px;"></i> +60 12 3456789 </h5>
-        <h5><i class="fa-solid fa-at" style="color: black;font-size: 15px;"></i> adams@gmail.com</h5>
-      </div>
-      <br>
-  </div>
+    <div class="item">
+        <div class="card">
+            <div class="card-header"><img src="web1.png" style="min-height: 210px;"></div>
+            <div class="card-body text-dark" ><h5>helpblind</h5></div>
+            <div class="card-footer text-dark"><h6>Website designed to track the whereabouts of visually impaired individuals, provide information about their surroundings, and issue alerts concerning their movements.</h6></div>
+        </div>
+    </div>
+    <div class="item">
+        <div class="card">
+            <div class="card-header"><img src="web2.png" style="min-height: 210px;"></div>
+            <div class="card-body text-dark" ><h5>Privatemovie</h5></div>
+            <div class="card-footer text-dark"><h6>Website for streaming movies.</h6></div>
+        </div>
+    </div>
 </div>
-<center><a class="company text-muted" style="padding-top: 50px;color:black;" href="https://wa.me/60198703108?text=I would like to build my business landing page," target="_blank">- By WebDev -</a></center>
+<div class="row pt-5">
+    <div class="col-sm-6" style="color: black;">
+        <h3 id="aboutme">Contact</h3>
+        <p class="caption2">Please feel free to contact me if you need any further information. </p>
+        <div>
+            <ul style="list-style: none;padding-left: 0px;font-family: 'Ubuntu', sans-serif;" >
+                <!-- <li style="display:inline;"><a id="facebook" href="#" class="fa fa-facebook" style="background-color: #3B5998;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li> -->
+                <!-- <li style="display:inline;"><a id="instagram" href="#" class="fa fa-instagram" style="background-color: #8a3ab9;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li> -->
+                <li style="display:inline;"><a id="facebook" href="https://wa.me/60198703108?text=Hello, I want to hire you." class="fa-brands fa-whatsapp" style="background-color: #44A52C;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li>
+            </ul>
+            <h5><i class="fa-solid fa-phone" style="color: black;font-size: 15px;"></i> +60 19 8703108 </h5>
+            <h5><i class="fa-solid fa-at" style="color: black;font-size: 15px;"></i> arifuddinorzain@gmail.com</h5>
+        </div>
+        <br>
+    </div>
+    <div id="radial" class="col-sm-6" style="background: radial-gradient(FFC300 , #FFC300 50%);">
+    <!-- <img align="right" src="ayipgambar.png" style="width:100%;height:80%;"> -->
+    </div>
+</div>
+<center><a class="company" style="padding-top: 50px;color:black;" href="#">- By Arif -</a></center>
 
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+     loop:true,
+     margin:10,
+     nav:false,
+     autoplay:true,
+     dots:true,
+     responsive:{
+         0:{
+             items:1
+         },
+         600:{
+             items:3
+         },
+         1000:{
+             items:3
+         }
+     }
+ })
+ </script>
 </body>
 </html>
