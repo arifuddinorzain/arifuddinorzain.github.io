@@ -1,424 +1,903 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>Personal | Home</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> -->
-  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script src="https://kit.fontawesome.com/6b891dce95.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Muhammad Arif - Electronic Engineer & Full-Stack Web Developer. Portfolio showcasing web development, Laravel, PHP, IoT, PLC, and automation projects.">
+  <meta name="keywords"
+    content="Muhammad Arif, Electronic Engineer, Full-Stack Developer, Laravel, PHP, IoT, PLC, UTeM, Malaysia Web Developer">
+  <meta name="author" content="Muhammad Arif">
 
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-    body{
-        font-family: 'Hammersmith One', sans-serif;
-        background-color: #FFC300;
-        padding-bottom: 20px;
-        scroll-behavior: smooth;
-        animation: fadeIn 3s;
-    }
-    #title{
-        font-weight: bold;
-        line-height: 0.8;
-        color: white;
-    }
-    #buttonjumbotron button, #order{
-        border-radius: 20px;
-        border: none;
-        outline: 3px solid orangered;
-        margin: 5px;
-        color: #FF5733;
-        padding-top: 3px;
-        padding-bottom: 3px;
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 18px;
-        background-color: white;
-    }
-    #card .card{
-        margin: 5px;
-        outline: none;
-        border: none;
-        border-radius: 20px;
-    }
-    #card .card:hover{
-        transform: scale(1.05);
-        transition: all 0.5s;
-    }
-    #card .card-body{
-        border-radius: 20px;
-        border: none;
-        box-shadow: 0px 0px 20px #d0d0d0;
-        padding: 10px;
-    }
-    #card .card-body h5{
-        padding-top: 10px;
-        font-size: 15px;
-    }
-    #tajukbaru{
-        padding-top: 40px;
-    }
-    .timeline .timeline-item:after {
-        position: absolute;
-        display: block;
-        top: 0;
-    }
-    .timeline .timeline-item:after {
-        background-color: hsl(0, 0%, 0%);
-        left: -47px;
-        border-radius: 50%;
-        height: 11px;
-        width: 11px;
-        content: "";
-    }
-    .timeline {
-        border-left: 2px solid hsl(0, 0%, 0%);
-        position: relative;
-        list-style: none;
-        color: black;
-    }
-    .timeline .timeline-item {
-        position: relative;
-    }
-    #owl .item .card{
-        border-radius: 10px;
-        background-color: #FFC300;
-        box-shadow: 0px 0px 5px grey inset;
-    }
-    #owl .item .card .card-header img{
-        border-radius: 10px;
-    }
-    #gambarprofile{
-        background-color: #FFC300;
-        height: 450px;
-        width: 100%;
-        border-radius: 100%;
-        background-image: url(ayipgambar.png);
-        background-size: 80% 100%;
-        background-repeat: no-repeat;
-        background-position-x: center;
-        box-shadow: 0px 0px 20px #CFA600 inset;
-    }
-    @media only screen and (max-width: 600px) {
-    #tajukbaru{
-        padding-top: 80px;
-    }
-    #gambarprofile{
-        /* background-color: #FFC300; */
-        height: 150px;
-        width: 100%;
-        border-radius: 100%;
-        background-image: url(ayipgambar.png);
-        background-size: contain;
-        background-repeat: no-repeat;
-        /* background-position: center center; */
-        background-position-x: center center;
-        box-shadow: none;
-    }
-    }
-    @keyframes fadeIn {
-        0% { opacity: 0; }
-        100% { opacity: 1; }
-    }
-    
-  </style>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Muhammad Arif | Electronic Engineer & Full-Stack Developer">
+  <meta property="og:description"
+    content="Portfolio showcasing electronic engineering background and full-stack web development projects.">
+  <meta property="og:type" content="website">
+
+  <title>Arifuddin Norzain | Electronic Engineer & Full-Stack Developer</title>
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-<nav id="navbar" class="navbar navbar-expand-lg navbar-light" style="background-color: #FFC300;">
-    <a class="navbar-brand" href="#" style="color: white;">Personal<span style="color: black;">.site</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav " >
-        <li class="nav-item" style="font-weight: bold;">
-            <a class="nav-link active" href="index.html" style="color: white;">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#aboutme" >Contact Me</a>
-        </li>
-        </ul>
-    </div>
-</nav>
-
-<div id="jumbotron" class="jumbotron text-left" style="height: 350px;color:black;background-image: linear-gradient(to bottom, #FFC300 40%, #FFC300 , #FFC300);border-radius: 0px;">
-    <div class="row">
-        <div class="col-sm-6" >
-            <h1 id="title">Hello, I'm <span style="color: black;">Arif</span></h1>
-            <h3 id="title">JUNIOR DEVELOPER | ELECTRONIC ENGINEER</h3> 
-            <h5 class="caption " style="font-weight: lighter;color:black;text-shadow: 0px 0px 5px #FFC300;">Dedicated to acquiring knowledge and fostering personal growth to consistently attain improved outcomes. My whole life is about being creative and simple.</h5>
-            <div id="buttonjumbotron" class="buttonjumbotron mt-2">
-                <a href="#donutlink"><button style="color:white;background-color: #FF5733;" >Read more</button></a>
-            </div>
-        </div>
-        <div class="col-sm-6 " style="background: radial-gradient(white , #FFC300 60%);width: 100%;">
-            <div class="row">
-                <div class="col-sm-2">
-                </div>
-                <div id="gambarprofile" class="col-sm-8">
-                
-                </div>
-                <div class="col-sm-2">
-                </div>
-            </div>
-            <!-- <div style="background-color: #FFC300;height: 70%;width: 60%;border-radius: 100%;margin:0 auto;box-shadow: 0px 0px 20px #CFA600 inset;"></div> -->
-        </div>
-    </div>
-</div>
-  
-<div class="container">
-  <div id="tajukbaru" class="row text-center">
-    <div class="col-sm-6" style="display: inline;background-color: #FFC300;padding: 20px;border-radius: 20px;box-shadow: 0px 0px 20px #CFA600 inset;">
-        <h2 style="color: black;">My Skills</h2>
-        <h7 class="captionkecil" style="color: black;">All of these skills have been acquired through my prior studies and experiences.</h7>
-        <div id="card" class="row py-5">
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-user-tie" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>HTML</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-pen-nib" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>PHP</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-palette" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>CSS</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-code" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>jQuery</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Bootstrap</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Laravel</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Javascript</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>Git</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>MySQL</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>API</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>PLC</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>C++</h5>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3" style="display: inline;">
-                <div class="card">
-                    <div class="card-body">
-                        <i class="fa-solid fa-layer-group" style="font-size: 20px;-webkit-text-stroke-width: 2px;color:transparent;-webkit-text-stroke-color: #FF5733;"></i>
-                        <h5>IoT</h5>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+  <!-- Ambient Soft Gradients & Background Grid -->
+  <div class="ambient-bg">
+    <div class="ambient-orb orb-1"></div>
+    <div class="ambient-orb orb-2"></div>
+    <div class="ambient-orb orb-3"></div>
   </div>
-  <div class="row pt-5">
-    <div id="radial" class="col-sm-6" style="color: black;">
-        <h3 id="donutlink"><i class="fa-solid fa-graduation-cap"></i> Education </h3>
-        <section>
-            <ul class="timeline">
-                <li class="timeline-item mb-5">
-                <h5 class="fw-bold">MRSM PENDANG</h5>
-                <p class="text-dark mb-2 fw-bold">2013 Until 2017</p>
-                <p class="text-dark">
-                    Pendang, Kedah.<br>
-                    Science Module.
+  <div class="ambient-grid"></div>
+
+  <!-- ==========================================
+       NAVIGATION BAR
+       ========================================== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="brand-logo" aria-label="Muhammad Arif Homepage">
+        <div class="brand-avatar">
+          <div class="brand-avatar-inner">A</div>
+        </div>
+        <span>Arif<span class="brand-title">.dev</span></span>
+      </a>
+
+      <nav class="nav-links" id="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#timeline" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div style="display:flex; align-items:center; gap:12px;">
+        <a href="#contact" class="btn btn-primary nav-cta-btn">Let's Talk</a>
+        <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle navigation menu"
+          aria-expanded="false">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero-section" id="home">
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Left Column: Intro -->
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="badge-dot"></span>
+              <span>Available for full-time & freelance projects</span>
+            </div>
+
+            <h1 class="hero-title">
+              Hi, I'm <span class="gradient-text">Arifuddin Norzain</span>
+            </h1>
+
+            <div class="hero-typing-wrapper">
+              <span id="typing-text">Bachelor of Electronic Engineering (UTeM)</span>
+              <span class="typing-cursor"></span>
+            </div>
+
+            <p class="hero-bio">
+              Bridging the gap between <strong>Hardware Electronic Engineering</strong>, <strong>Industrial Automation
+                (PLC & IoT)</strong>, and modern <strong>Full-Stack Web Development</strong>. Passionate about building
+              fast, scalable web applications and intelligent automated systems.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-primary">
+                <span>Get In Touch</span>
+                <span class="btn-icon">→</span>
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <span>View My Work</span>
+                <span class="btn-icon">↓</span>
+              </a>
+              <a href="#skills" class="btn btn-secondary">
+                <span>Explore Skills</span>
+                <span class="btn-icon">⚡</span>
+              </a>
+            </div>
+
+            <!-- Stats Bar -->
+            <div class="hero-stats-row">
+              <div class="stat-item">
+                <span class="stat-number">UTeM</span>
+                <span class="stat-label">Degree Graduate</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">13+</span>
+                <span class="stat-label">Core Techs</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">4+ Yrs</span>
+                <span class="stat-label">Studies & Exp</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">100%</span>
+                <span class="stat-label">Commitment</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Profile Picture Card -->
+          <div class="hero-visual-wrapper">
+            <div class="profile-card-modern">
+              <div class="profile-img-inner">
+                <img src="assets/profile.png" alt="Arifuddin Norzain - Electronic Engineer & Full-Stack Web Developer"
+                  class="profile-img">
+              </div>
+
+              <!-- Floating Modern Tech Badges -->
+              <div class="floating-badge badge-top-left">
+                <span class="floating-badge-icon">🎓</span>
+                <span class="floating-badge-text">B.Eng (Electronic) — UTeM</span>
+              </div>
+
+              <div class="floating-badge badge-bottom-right">
+                <span class="floating-badge-icon">💻</span>
+                <span class="floating-badge-text">Laravel & Web Developer</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT ME SECTION
+         ========================================== -->
+    <section class="about-section reveal" id="about">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span>ABOUT ME</span>
+          </div>
+          <h2 class="section-title">Engineering Background, <span class="gradient-text">Full-Stack Passion</span></h2>
+          <p class="section-desc">
+            Combining a rigorous electronic engineering foundation with modern web technologies to create robust,
+            user-centric digital solutions.
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Card 1 -->
+          <div class="glass-card about-card">
+            <div class="about-icon-wrapper">⚡</div>
+            <h3 class="about-card-title">Electronic Engineering</h3>
+            <p class="about-card-desc">
+              Graduated with a Bachelor of Electronic Engineering from UTeM. Experienced in microcontrollers, circuit
+              logic, embedded programming, sensor nodes, and hardware-software integration.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="glass-card about-card">
+            <div class="about-icon-wrapper">🌐</div>
+            <h3 class="about-card-title">Full-Stack Development</h3>
+            <p class="about-card-desc">
+              Developing modern, high-performance web applications using PHP, Laravel, MySQL, JavaScript, and responsive
+              front-end design. Focused on clean architecture and smooth user experiences.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="glass-card about-card">
+            <div class="about-icon-wrapper">⚙️</div>
+            <h3 class="about-card-title">Automation & IoT</h3>
+            <p class="about-card-desc">
+              Creating custom automation bots (such as Google Form survey bots), industrial PLC ladder logic control,
+              and smart IoT sensor gateways to streamline complex workflows and eliminate repetitive manual tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SKILLS SECTION (ALL 13 UPLOADED SKILLS)
+         ========================================== -->
+    <section class="skills-section reveal" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span>MY SKILLS</span>
+          </div>
+          <h2 class="section-title">Technical <span class="gradient-text">Toolkit & Expertise</span></h2>
+          <p class="section-desc">
+            All of these skills have been acquired through my prior studies and experiences.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="skills-nav-tabs" role="tablist">
+          <button class="skill-tab-btn active" data-category="all">All Skills (13)</button>
+          <button class="skill-tab-btn" data-category="web">Web & Front-End</button>
+          <button class="skill-tab-btn" data-category="hardware">Hardware & IoT</button>
+          <button class="skill-tab-btn" data-category="data">Backend & Database</button>
+        </div>
+
+        <!-- Skills Grid (13 Skills) -->
+        <div class="skills-grid" id="skills-grid">
+
+          <!-- 1. HTML -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4zm13.2 4.5H8.3l.3 3.5h7.8l-.5 5.5-3.8 1.1-3.8-1.1-.3-3.2" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">HTML</h4>
+                <span class="skill-category">Semantic Markup</span>
+              </div>
+            </div>
+            <p class="skill-desc">Semantic HTML5 structure, web accessibility standards, canvas rendering, and
+              responsive DOM layouts.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">95%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 95%;"></div>
+            </div>
+          </div>
+
+          <!-- 2. PHP -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="4" width="18" height="16" rx="2" />
+                  <path d="M7 8h4a2 2 0 0 1 0 4H7v4m9-8h-3v8h3a2 2 0 0 0 0-4h-3" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">PHP</h4>
+                <span class="skill-category">Server-Side Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">Server-side application logic, dynamic templating, session handling, and RESTful API
+              endpoints.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">90%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- 3. CSS -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 3l1.5 15L12 21l6.5-3L20 3H4z" />
+                  <path d="M8 8h8l-1 5H9l.2 2.5 2.8.8 2.8-.8.2-1.5" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">CSS</h4>
+                <span class="skill-category">Modern Styling & Animations</span>
+              </div>
+            </div>
+            <p class="skill-desc">Modern CSS3, Grid, Flexbox, smooth transitions, glassmorphism, responsive breakpoints,
+              and custom themes.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">92%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- 4. jQuery -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M8 12h8m-4-4v8" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">jQuery</h4>
+                <span class="skill-category">DOM & AJAX Engine</span>
+              </div>
+            </div>
+            <p class="skill-desc">Asynchronous AJAX communications, event handling, dynamic UI animations, and rapid DOM
+              manipulation.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">88%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- 5. Bootstrap -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="4" />
+                  <path d="M8 7h4.5a2.5 2.5 0 0 1 0 5H8zm0 5h5a2.5 2.5 0 0 1 0 5H8z" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Bootstrap</h4>
+                <span class="skill-category">UI Framework</span>
+              </div>
+            </div>
+            <p class="skill-desc">Mobile-first responsive interface development, flexible grid systems, modals, and
+              interactive UI components.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">90%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- 6. Laravel -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polygon points="12 2 2 7 12 12 22 7 12 2" />
+                  <polyline points="2 17 12 22 22 17" />
+                  <polyline points="2 12 12 17 22 12" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Laravel</h4>
+                <span class="skill-category">Full-Stack Framework</span>
+              </div>
+            </div>
+            <p class="skill-desc">MVC architecture, Eloquent ORM, Blade templating, authentication scaffolding, routing,
+              and database migrations.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">88%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- 7. Javascript -->
+          <div class="skill-card" data-category="web">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="3" y="3" width="18" height="18" rx="2" />
+                  <path d="M8 17v-4a2 2 0 0 1 2-2m4 6v-5a1.5 1.5 0 0 1 3 0v5" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Javascript</h4>
+                <span class="skill-category">Core Web Language</span>
+              </div>
+            </div>
+            <p class="skill-desc">ES6+ standards, asynchronous programming (Async/Await, Promises), Web APIs, DOM
+              manipulation, and interactive features.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">92%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 92%;"></div>
+            </div>
+          </div>
+
+          <!-- 8. Git -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="6" cy="6" r="3" />
+                  <circle cx="6" cy="18" r="3" />
+                  <circle cx="18" cy="10" r="3" />
+                  <line x1="6" y1="9" x2="6" y2="15" />
+                  <path d="M6 9a9 9 0 0 1 9 9" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">Git</h4>
+                <span class="skill-category">Version Control</span>
+              </div>
+            </div>
+            <p class="skill-desc">Version control, branching workflows, GitHub collaboration, commits, merge resolution,
+              and repository management.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">88%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 88%;"></div>
+            </div>
+          </div>
+
+          <!-- 9. MySQL -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <ellipse cx="12" cy="5" rx="9" ry="3" />
+                  <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" />
+                  <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">MySQL</h4>
+                <span class="skill-category">Relational Database</span>
+              </div>
+            </div>
+            <p class="skill-desc">Relational database schema design, SQL queries, table indexing, joins, stored data
+              integrity, and normalization.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">87%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 87%;"></div>
+            </div>
+          </div>
+
+          <!-- 10. API -->
+          <div class="skill-card" data-category="data">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">API</h4>
+                <span class="skill-category">RESTful Architecture</span>
+              </div>
+            </div>
+            <p class="skill-desc">RESTful API development, JSON data exchange, third-party service integration, and
+              automated webhooks.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">90%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+          <!-- 11. PLC -->
+          <div class="skill-card" data-category="hardware">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="4" y="4" width="16" height="16" rx="2" />
+                  <path d="M9 9h6v6H9z" />
+                  <path d="M4 10h5m6 0h5m-10 4h5" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">PLC</h4>
+                <span class="skill-category">Industrial Automation</span>
+              </div>
+            </div>
+            <p class="skill-desc">Programmable Logic Controllers, Ladder Diagram logic, automated manufacturing sequence
+              control, and safety interlocks.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">85%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 85%;"></div>
+            </div>
+          </div>
+
+          <!-- 12. C++ -->
+          <div class="skill-card" data-category="hardware">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <polyline points="16 18 22 12 16 6" />
+                  <polyline points="8 6 2 12 8 18" />
+                  <line x1="12" y1="8" x2="12" y2="16" />
+                  <line x1="8" y1="12" x2="16" y2="12" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">C++</h4>
+                <span class="skill-category">Embedded Programming</span>
+              </div>
+            </div>
+            <p class="skill-desc">Object-oriented programming, memory management, algorithm execution, and
+              microcontroller firmware development.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">86%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 86%;"></div>
+            </div>
+          </div>
+
+          <!-- 13. IoT -->
+          <div class="skill-card" data-category="hardware">
+            <div class="skill-card-top">
+              <div class="skill-icon-box">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12.55a11 11 0 0 1 14.08 0" />
+                  <path d="M1.42 9a16 16 0 0 1 21.16 0" />
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                  <circle cx="12" cy="20" r="1" />
+                </svg>
+              </div>
+              <div class="skill-info">
+                <h4 class="skill-name">IoT</h4>
+                <span class="skill-category">Smart Sensors & Telemetry</span>
+              </div>
+            </div>
+            <p class="skill-desc">Internet of Things sensor networks, ESP32/Arduino microcontroller telemetry, MQTT
+              protocols, and cloud monitoring.</p>
+            <div class="skill-level-row"><span>Proficiency</span><span class="pct">90%</span></div>
+            <div class="skill-progress-bar">
+              <div class="skill-progress-fill" style="width: 90%;"></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         EDUCATION & EXPERIENCE SECTION
+         (FROM USER'S UPLOADED IMAGES)
+         ========================================== -->
+    <section class="timeline-section reveal" id="timeline">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span>MY JOURNEY</span>
+          </div>
+          <h2 class="section-title">Education & <span class="gradient-text">Experience</span></h2>
+          <p class="section-desc">
+            A chronological timeline of my academic background and hands-on professional experiences.
+          </p>
+        </div>
+
+        <div class="timeline-dual-grid">
+          <!-- Left Column: Education -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <div class="timeline-column-icon">🎓</div>
+              <h3 class="timeline-column-title">Education</h3>
+            </div>
+
+            <div class="timeline-items-flow">
+              <!-- UTeM -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta-row">
+                  <span class="timeline-period-badge">2019 — 2023</span>
+                  <span class="timeline-location">📍 Durian Tunggal, Melaka</span>
+                </div>
+                <h4 class="timeline-item-title">UNIVERSITI TEKNIKAL MALAYSIA MELAKA (UTeM)</h4>
+                <div class="timeline-item-subtitle">Bachelor of Electronic Engineering</div>
+                <p class="timeline-item-desc">
+                  Completed an in-depth electronic engineering degree program covering electronic circuits, embedded
+                  systems, microcontroller firmware, IoT sensor telemetry, control systems, and engineering software
+                  design.
                 </p>
-                </li>
-                <li class="timeline-item mb-5">
-                    <h5 class="fw-bold">NEGERI SEMBILAN MATRICULATION COLLEGE</h5>
-                    <p class="text-dark mb-2 fw-bold">2018-2019</p>
-                    <p class="text-dark">
-                        Kuala Pilah, Negeri Sembilan.<br>
-                        Module 2, Computer Science
-                    </p>
-                </li>
-                <li class="timeline-item mb-5">
-                    <h5 class="fw-bold">UNIVERSITI TEKNIKAL MALAYSIA MELAKA, UTEM</h5>
-                    <p class="text-dark mb-2 fw-bold">2019-2023</p>
-                    <p class="text-dark">
-                        Durian Tunggal, Melaka<br>
-                        Bachelor of Electronic Engineering
-                    </p>
-                </li>
-            </ul>
-        </section>
-        <br>
-    </div>
-    <div class="col-sm-6" style="color: black;">
-      <h3 id="donutlink"><i class="fa-solid fa-briefcase"></i> Experience </h3>
-      <section>
-        <ul class="timeline">
-            <li class="timeline-item mb-5">
-              <h5 class="fw-bold">QUALITY CONTROL</h5>
-              <p class="text-dark mb-2 fw-bold">2022 Until 20222</p>
-              <p class="text-dark">
-                Krubong, Melaka<br>
-                Handle customer report.
-              </p>
-            </li>
-            <li class="timeline-item mb-5">
-                <h5 class="fw-bold">GOOGLE FORM SURVEY BOT</h5>
-                <p class="text-dark mb-2 fw-bold">2022 Until 2023</p>
-                <p class="text-dark">
-                  Flexible, shopee<br>
-                  Part time as filler google form using Bot.
+                <div class="timeline-tags">
+                  <span class="timeline-tag-pill">Electronic Engineering</span>
+                  <span class="timeline-tag-pill">Embedded Systems</span>
+                  <span class="timeline-tag-pill">IoT Hardware</span>
+                </div>
+              </div>
+
+              <!-- Matriculation -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta-row">
+                  <span class="timeline-period-badge">2018 — 2019</span>
+                  <span class="timeline-location">📍 Kuala Pilah, Negeri Sembilan</span>
+                </div>
+                <h4 class="timeline-item-title">NEGERI SEMBILAN MATRICULATION COLLEGE</h4>
+                <div class="timeline-item-subtitle">Module 2, Computer Science</div>
+                <p class="timeline-item-desc">
+                  Pre-university matriculation program focusing on computer science, programming fundamentals,
+                  algorithmic problem solving, physics, and mathematics.
                 </p>
-              </li>
-        </ul>
-      </section>
-      <br>
-  </div>
-</div>
-<br>
-<h2>Portfolio</h2>
-<div id="owl" class="owl-carousel owl-theme">
-    <div class="item">
-        <div class="card">
-            <div class="card-header"><img src="portfolio1.png" style="min-height: 210px;"></div>
-            <div class="card-body text-dark" ><h5>Komik Digital</h5></div>
-            <div class="card-footer text-dark"><h6>Platform where artists upload their drawings and display them for everyone to read.</h6></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-            <div class="card-header"><img src="web1.png" style="min-height: 210px;"></div>
-            <div class="card-body text-dark" ><h5>helpblind</h5></div>
-            <div class="card-footer text-dark"><h6>Website designed to track the whereabouts of visually impaired individuals, provide information about their surroundings, and issue alerts concerning their movements.</h6></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-            <div class="card-header"><img src="web4.png" style="min-height: 210px;"></div>
-            <div class="card-body text-dark" ><h5>Notedat</h5></div>
-            <div class="card-footer text-dark"><h6>Implement crud to making my personal notepad.</h6></div>
-        </div>
-    </div>
-    <div class="item">
-        <div class="card">
-            <div class="card-header"><img src="web2.png" style="min-height: 210px;"></div>
-            <div class="card-body text-dark" ><h5>Privatemovie</h5></div>
-            <div class="card-footer text-dark"><h6>Improve myself by making personal movie website using TMDB API.</h6></div>
-        </div>
-    </div>
-</div>
-<div class="row pt-5">
-    <div class="col-sm-6" style="color: black;">
-        <h3 id="aboutme">Contact</h3>
-        <p class="caption2">Please feel free to contact me if you need any further information. </p>
-        <div>
-            <ul style="list-style: none;padding-left: 0px;font-family: 'Ubuntu', sans-serif;" >
-                <!-- <li style="display:inline;"><a id="facebook" href="#" class="fa fa-facebook" style="background-color: #3B5998;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li> -->
-                <!-- <li style="display:inline;"><a id="instagram" href="#" class="fa fa-instagram" style="background-color: #8a3ab9;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li> -->
-                <li style="display:inline;"><a id="facebook" href="https://wa.me/60198703108?text=Hello, I want to hire you." class="fa-brands fa-whatsapp" style="background-color: #44A52C;color: white;padding: 10px;border-radius: 20px;text-decoration: none;" target="_blank"></a></li>
-            </ul>
-            <h5><i class="fa-solid fa-phone" style="color: black;font-size: 15px;"></i> +60 19 8703108 </h5>
-            <h5><i class="fa-solid fa-at" style="color: black;font-size: 15px;"></i> arifuddinorzain@gmail.com</h5>
-        </div>
-        <br>
-    </div>
-    <div id="radial" class="col-sm-6" style="background: radial-gradient(FFC300 , #FFC300 50%);">
-    <!-- <img align="right" src="ayipgambar.png" style="width:100%;height:80%;"> -->
-    </div>
-</div>
-<center><a class="company" style="padding-top: 50px;color:black;" href="#">- By Arif -</a></center>
+                <div class="timeline-tags">
+                  <span class="timeline-tag-pill">Computer Science</span>
+                  <span class="timeline-tag-pill">Programming Logic</span>
+                  <span class="timeline-tag-pill">Mathematics</span>
+                </div>
+              </div>
 
+              <!-- MRSM Pendang -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta-row">
+                  <span class="timeline-period-badge">2013 — 2017</span>
+                  <span class="timeline-location">📍 Pendang, Kedah</span>
+                </div>
+                <h4 class="timeline-item-title">MRSM PENDANG</h4>
+                <div class="timeline-item-subtitle">Science Module</div>
+                <p class="timeline-item-desc">
+                  Secondary education at Mara Junior Science College (MRSM), developing analytical thinking and strong
+                  foundations in pure science and mathematics.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag-pill">Science Module</span>
+                  <span class="timeline-tag-pill">Analytical Thinking</span>
+                  <span class="timeline-tag-pill">SPM</span>
+                </div>
+              </div>
+            </div>
+          </div>
 
+          <!-- Right Column: Experience -->
+          <div class="timeline-column">
+            <div class="timeline-column-header">
+              <div class="timeline-column-icon">💼</div>
+              <h3 class="timeline-column-title">Experience</h3>
+            </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    $('.owl-carousel').owlCarousel({
-     loop:true,
-     margin:10,
-     nav:false,
-     autoplay:true,
-     dots:true,
-     responsive:{
-         0:{
-             items:1
-         },
-         600:{
-             items:3
-         },
-         1000:{
-             items:3
-         }
-     }
- })
- </script>
+            <div class="timeline-items-flow">
+              <!-- Google Form Survey Bot -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta-row">
+                  <span class="timeline-period-badge">2022 — 2023</span>
+                  <span class="timeline-location">📍 Flexible / Shopee</span>
+                </div>
+                <h4 class="timeline-item-title">GOOGLE FORM SURVEY BOT</h4>
+                <div class="timeline-item-subtitle">Automation & Script Developer</div>
+                <p class="timeline-item-desc">
+                  Part-time role developing automated survey bot scripts to rapidly populate, parse, and automate Google
+                  Forms submissions with high consistency, data validation, and scheduling routines.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag-pill">Bot Automation</span>
+                  <span class="timeline-tag-pill">Scripting</span>
+                  <span class="timeline-tag-pill">Data Validation</span>
+                </div>
+              </div>
+
+              <!-- Quality Control -->
+              <div class="timeline-card">
+                <div class="timeline-dot"></div>
+                <div class="timeline-meta-row">
+                  <span class="timeline-period-badge">2022 — 2022</span>
+                  <span class="timeline-location">📍 Krubong, Melaka</span>
+                </div>
+                <h4 class="timeline-item-title">QUALITY CONTROL (QC)</h4>
+                <div class="timeline-item-subtitle">Quality Assurance & Operations Support</div>
+                <p class="timeline-item-desc">
+                  Handled customer quality reports, evaluated product compliance, tracked defect logs, coordinated with
+                  production teams, and maintained detailed documentation standards.
+                </p>
+                <div class="timeline-tags">
+                  <span class="timeline-tag-pill">Quality Control</span>
+                  <span class="timeline-tag-pill">Customer Reports</span>
+                  <span class="timeline-tag-pill">Documentation</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         FEATURED PROJECTS SECTION
+         ========================================== -->
+    <section class="projects-section reveal" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span>PORTFOLIO</span>
+          </div>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-desc">
+            A selection of web applications, automation bots, and engineering projects I've built.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">PROJECT 01</span>
+              <span class="project-status">● Live Application</span>
+            </div>
+            <h3 class="project-title">Invoice Management & PDF Generator</h3>
+            <p class="project-desc">
+              A streamlined web application for generating professional invoices, calculations, itemization, and
+              client-ready PDFs with instant preview.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">PDF Engine</span>
+            </div>
+            <a href="#contact" class="project-link-action">Learn More ↗</a>
+          </article>
+
+          <!-- Project 02 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">PROJECT 02</span>
+              <span class="project-status">● Web Dashboard</span>
+            </div>
+            <h3 class="project-title">Solar Quick View Analytics Hub</h3>
+            <p class="project-desc">
+              Automation-focused dashboard that extracts solar project information, parses spreadsheets, and renders
+              clean visual charts and energy yield summaries.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">REST API</span>
+              <span class="tech-tag">Data Charts</span>
+              <span class="tech-tag">CSS Grid</span>
+            </div>
+            <a href="#contact" class="project-link-action">Learn More ↗</a>
+          </article>
+
+          <!-- Project 03 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">PROJECT 03</span>
+              <span class="project-status">● Web Platform</span>
+            </div>
+            <h3 class="project-title">Travel Quotation & Booking Platform</h3>
+            <p class="project-desc">
+              A modern travel quotation experience with dynamic package add-ons, pricing formulas, client proposal
+              generation, and responsive client-ready itineraries.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">PHP</span>
+              <span class="tech-tag">Bootstrap</span>
+              <span class="tech-tag">jQuery</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+            <a href="#contact" class="project-link-action">Learn More ↗</a>
+          </article>
+
+          <!-- Project 04 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">PROJECT 04</span>
+              <span class="project-status">● Automation</span>
+            </div>
+            <h3 class="project-title">Google Form Automation Bot Engine</h3>
+            <p class="project-desc">
+              Headless automation script designed to parse datasets, automate form population, handle rate limits, and
+              provide execution logging for survey tasks.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">JavaScript / Bot</span>
+              <span class="tech-tag">Automation</span>
+              <span class="tech-tag">Web APIs</span>
+            </div>
+            <a href="#contact" class="project-link-action">Learn More ↗</a>
+          </article>
+
+          <!-- Project 05 -->
+          <article class="project-card">
+            <div class="project-header">
+              <span class="project-num">PROJECT 05</span>
+              <span class="project-status">● Hardware / IoT</span>
+            </div>
+            <h3 class="project-title">IoT & PLC Industrial Telemetry Node</h3>
+            <p class="project-desc">
+              Electronic engineering capstone linking industrial PLC control inputs with IoT microcontroller telemetry,
+              broadcasting sensor status to a real-time web dashboard.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">PLC</span>
+              <span class="tech-tag">IoT Sensors</span>
+              <span class="tech-tag">REST API</span>
+            </div>
+            <a href="#contact" class="project-link-action">Learn More ↗</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         CONTACT SECTION
+         ========================================== -->
+    <section class="contact-section reveal" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div class="badge-pill">
+            <span>GET IN TOUCH</span>
+          </div>
+          <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+          <p class="section-desc">
+            Have a project in mind or looking to hire an engineer & developer? Send me a message and let's discuss.
+          </p>
+        </div>
+
+        <div class="contact-layout">
+          <!-- Left: Contact Details -->
+          <div class="glass-card contact-info-card">
+            <h3 class="contact-info-title">Contact Information</h3>
+            <p class="contact-info-desc">
+              Feel free to reach out directly via email or check my location. I am actively looking for full-time
+              engineering and web development opportunities.
+            </p>
+
+            <div class="contact-channels">
+              <a href="mailto:arifu@example.com" class="channel-item">
+                <div class="channel-icon-box">📧</div>
+                <div class="channel-detail">
+                  <span class="channel-label">Email Address</span>
+                  <span class="channel-val">arifu@example.com</span>
+                </div>
+              </a>
+
+              <div class="channel-item">
+                <div class="channel-icon-box">📍</div>
+                <div class="channel-detail">
+                  <span class="channel-label">Location</span>
+                  <span class="channel-val">Melaka, Malaysia</span>
+                </div>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-icon-box">🎓</div>
+                <div class="channel-detail">
+                  <span class="channel-label">Qualification</span>
+                  <span class="channel-val">B.Eng (Electronic) — UTeM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Contact Form -->
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="contact-name" class="form-label">Your Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. John Doe" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-email" class="form-label">Your Email</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. john@example.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="contact-message" class="form-label">Your Message</label>
+                <textarea id="contact-message" class="form-textarea"
+                  placeholder="Tell me about your project, timeline, or job opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width:100%;">
+                <span>Send Message</span>
+                <span class="btn-icon">→</span>
+              </button>
+
+              <div id="form-feedback" class="form-feedback"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer reveal">
+    <div class="container">
+      <div class="footer-top">
+        <a href="#home" class="brand-logo" aria-label="Muhammad Arif Homepage">
+          <div class="brand-avatar">
+            <div class="brand-avatar-inner">A</div>
+          </div>
+          <span>Arif<span class="brand-title">.dev</span></span>
+        </a>
+
+        <div class="footer-nav">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#timeline">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2026 Arifuddin Norzain. All rights reserved.</span>
+        <button class="back-to-top-btn" id="back-to-top-btn">Back to top ↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Main Engine -->
+  <script src="js/main.js"></script>
 </body>
+
 </html>
