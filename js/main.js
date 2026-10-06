@@ -156,20 +156,64 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // ==========================================
-  // 6. CONTACT FORM SUBMISSION
+  // 6. CONTACT FORM REAL EMAIL DISPATCH (FORMSUBMIT)
   // ==========================================
   const contactForm = document.getElementById('contact-form');
   const formFeedback = document.getElementById('form-feedback');
+  const submitBtn = document.getElementById('contact-submit-btn');
 
   if (contactForm) {
-    contactForm.addEventListener('submit', (e) => {
+    contactForm.addEventListener('submit', async (e) => {
       e.preventDefault();
+      
+      const name = document.getElementById('contact-name')?.value.trim();
+      const email = document.getElementById('contact-email')?.value.trim();
+      const message = document.getElementById('contact-message')?.value.trim();
+
+      if (!name || !email || !message) return;
+
       if (formFeedback) {
-        formFeedback.innerHTML = '<span style="color:var(--primary); font-weight:600;">Sending message...</span>';
-        setTimeout(() => {
-          formFeedback.innerHTML = '<span style="color:var(--accent-emerald); font-weight:600;">✓ Thank you! Your message has been sent successfully.</span>';
+        formFeedback.innerHTML = '<span style="color:var(--primary); font-weight:600;">Sending your message...</span>';
+      }
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.style.opacity = '0.7';
+      }
+
+      try {
+        const response = await fetch('https://formsubmit.co/ajax/arifuddinorzain@gmail.com', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept': 'application/json'
+          },
+          body: JSON.stringify({
+            name: name,
+            email: email,
+            message: message,
+            _subject: `New Portfolio Message from ${name}`
+          })
+        });
+
+        const data = await response.json();
+
+        if (response.ok || data.success === 'true' || data.success === true) {
+          if (formFeedback) {
+            formFeedback.innerHTML = '<span style="color:var(--accent-emerald); font-weight:600;">✓ Thank you! Your message was sent directly to Arif\'s email.</span>';
+          }
           contactForm.reset();
-        }, 1000);
+        } else {
+          throw new Error('Failed to send');
+        }
+      } catch (err) {
+        if (formFeedback) {
+          formFeedback.innerHTML = '<span style="color:var(--accent-rose); font-weight:500;">Could not send automatically. Please email directly to <a href="mailto:arifuddinorzain@gmail.com" style="color:var(--primary); text-decoration:underline;">arifuddinorzain@gmail.com</a></span>';
+        }
+      } finally {
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.style.opacity = '1';
+        }
       }
     });
   }
