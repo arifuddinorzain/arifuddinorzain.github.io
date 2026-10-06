@@ -168,6 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
       
       const name = document.getElementById('contact-name')?.value.trim();
       const email = document.getElementById('contact-email')?.value.trim();
+      const phone = document.getElementById('contact-phone')?.value.trim() || 'Not provided';
       const message = document.getElementById('contact-message')?.value.trim();
 
       if (!name || !email || !message) return;
@@ -190,6 +191,7 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify({
             name: name,
             email: email,
+            phone: phone,
             message: message,
             _subject: `New Portfolio Message from ${name}`
           })
